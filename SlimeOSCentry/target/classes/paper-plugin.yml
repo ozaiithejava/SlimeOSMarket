@@ -1,0 +1,15 @@
+name: SlimeOSCentry
+version: '1.0-SNAPSHOT'
+main: net.ozaii.slimeOSCentry.SlimeOSCentry
+api-version: '1.20'
+
+commands:
+  print:
+    description: A test command for SlimeOSCentry
+    usage: /print
+    permission: slimeoscentry.print
+
+permissions:
+  slimeoscentry.print:
+    description: Allows usage of the test command
+    default: true

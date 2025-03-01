@@ -1,0 +1,20 @@
+name: SlimeOSCentry
+version: '1.0-SNAPSHOT'
+main: net.ozaii.slimeOSCentry.SlimeOSCentry
+api-version: '1.20'
+depend: [PlaceholderAPI]
+
+commands:
+  sitemarket:
+    description: SlimeOS marketini kullanmak için temel komut
+    usage: /sitemarket
+    permission: slimeoscentry.shop
+  debug_slimeos:
+    description: SlimeOS debug komutu
+    usage: /debug_slimeos
+    permission: slimeoscentry.admin
+  reload_slimeos:
+    description: eklentiyi reloadlar
+    usage: /reload_slimeos
+    permission: slimeoscentry.admin
+

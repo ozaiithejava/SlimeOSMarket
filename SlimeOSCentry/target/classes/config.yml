@@ -1,0 +1,103 @@
+#       ##########       made by : ozaii & oemuser       #####################
+#  $$$$$$\  $$\       $$$$$$\ $$\      $$\ $$$$$$$$\  $$$$$$\   $$$$$$\
+#  $$  __$$\ $$ |      \_$$  _|$$$\    $$$ |$$  _____|$$  __$$\ $$  __$$\
+#  $$ /  \__|$$ |        $$ |  $$$$\  $$$$ |$$ |      $$ /  $$ |$$ /  \__|
+#  \$$$$$$\  $$ |        $$ |  $$\$$\$$ $$ |$$$$$\    $$ |  $$ |\$$$$$$\
+#   \____$$\ $$ |        $$ |  $$ \$$$  $$ |$$  __|   $$ |  $$ | \____$$\
+#  $$\   $$ |$$ |        $$ |  $$ |\$  /$$ |$$ |      $$ |  $$ |$$\   $$ |
+#  \$$$$$$  |$$$$$$$$\ $$$$$$\ $$ | \_/ $$ |$$$$$$$$\  $$$$$$  |\$$$$$$  |
+#   \______/ \________|\______|\__|     \__|\________| \______/  \______/
+##############################################################################
+
+
+
+# ===================================================
+# KURULUM AYARLARI
+# ===================================================
+# 'state' değerini 'true' yaparak kurulumu tamamlayın
+# Tüm veritabanı bilgilerini doğru girdikten sonra bunu true yapın
+setup:
+  state: false  # [!] Kurulum tamamlandığında bu değeri 'true' yapın
+
+prefix: "&6&l[SLIMEOS]"
+
+# ===================================================
+# VERİTABANI AYARLARI
+# ===================================================
+# SlimeOS'un kullanacağı MySQL/MariaDB veritabanı bilgileri
+database:
+  # Veritabanı adı (örnek: slimeos_database)
+  db-name: "your_database"    # Veritabanının adı
+
+  # Veritabanı sunucu adresi (varsayılan: localhost)
+  host: "localhost"           # Veritabanı sunucusunun IP adresi
+
+  # Veritabanı portu (MySQL için varsayılan: 3306)
+  port: 3306                  # Veritabanı sunucusunun portu
+
+  # Veritabanı kullanıcı adı
+  username: "your_username"   # Veritabanı erişimi için kullanıcı adı
+
+  # Veritabanı şifresi
+  password: "your_password"   # Veritabanı kullanıcısının şifresi
+
+
+
+categories:
+  weapons:
+    name: "Weapons"
+    icon: "DIAMOND_SWORD"
+    guislot: 1
+    is_decorations: false
+  armor:
+    name: "Armor"
+    icon: "IRON_CHESTPLATE"
+    guislot: 2
+    is_decorations: false
+  decorations:
+    name: "Decorations"
+    icon: "FLOWER_POT"
+    guislot: 3
+    is_decorations: true
+  misc:
+    name: "Miscellaneous"
+    icon: "BREAD"
+    guislot: 4
+    is_decorations: false
+
+products:
+  product1:
+    name: "Diamond Sword"
+    icon: "DIAMOND_SWORD"
+    amount: 1
+    description: "Keskinlik V ile güçlendirilmiş!"
+    category: "Weapons"
+    guislot: 0
+    command: "give %player% diamond_sword 1"
+
+  product2:
+    name: "Golden Apple"
+    icon: "GOLDEN_APPLE"
+    amount: 5
+    description: "Yenilmezlik için harika bir seçim!"
+    category: "Food"
+    guislot: 1
+    command: "give %player% golden_apple 5"
+
+  product3:
+    name: "Netherite Chestplate"
+    icon: "NETHERITE_CHESTPLATE"
+    amount: 1
+    description: "En güçlü zırhlardan biri!"
+    category: "Armor"
+    guislot: 2
+    command: "give %player% netherite_chestplate 1"
+
+  product4:
+    name: "Elytra"
+    icon: "ELYTRA"
+    amount: 1
+    description: "Gökyüzüne yüksel!"
+    category: "Special"
+    guislot: 3
+    command: "give %player% elytra 1"

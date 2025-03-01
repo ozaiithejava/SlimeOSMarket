@@ -1,0 +1,10 @@
+categories:
+  category1:
+    name: "Weapons"
+    icon: "DIAMOND_SWORD:1"
+  category2:
+    name: "Armor"
+    icon: "DIAMOND_CHESTPLATE:1"
+  category3:
+    name: "Potions"
+    icon: "POTION:1"
